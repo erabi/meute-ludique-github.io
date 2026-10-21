@@ -156,6 +156,8 @@ p{margin:0 0 1em;max-width:68ch}
 .p-badge{display:inline-grid;place-items:center;width:2.3rem;height:2.3rem;border-radius:50%;background:var(--jaune);color:var(--noir);
   font-weight:800;font-size:.95rem;border:2px solid var(--noir)}
 .parkings strong{color:var(--blanc)}
+.pmr{white-space:normal}
+.pmr svg{width:1.4em;height:1.4em;vertical-align:-.35em;margin-right:.3em;padding:.12em;border-radius:4px;background:#1f5fbf;fill:#fff}
 .acces-legende ul{margin:0;padding-left:1.1rem}
 .acces-legende li{margin-bottom:.4rem}
 
@@ -334,7 +336,7 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
         <figure class="plan">
           <svg viewBox="0 0 1185 794" role="img" aria-labelledby="plan-titre plan-desc">
             <title id="plan-titre">Plan d’accès à la salle des fêtes Jean Ferrat, Lupé</title>
-            <desc id="plan-desc">Plan simplifié du centre de Lupé. La salle des fêtes Jean Ferrat est à côté de la mairie, entre la D67 et la route de La Chapelle. Cinq parkings : P1 près de l’église, P2 le long de la D67 juste après l’église, P3 rue Les Granges, P4 au début de Belle Combe, P5 rue de Montagnon à l’entrée du village côté Maclas.</desc>
+            <desc id="plan-desc">Plan simplifié du centre de Lupé. La salle des fêtes Jean Ferrat est à côté de la mairie, entre la D67 et la D503. Six parkings : P1 près de l’église, P2 le long de la D67 juste après l’église, P3 rue Les Granges, P4 à l’entrée de la rue de Montagnon, juste de l’autre côté de la D503, P5 à la sortie de la rue de Montagnon, à l’entrée du village côté Maclas, P6 juste devant la salle côté D503 avec 2 places réservées aux personnes à mobilité réduite.</desc>
             <defs>
               <pattern id="vignes" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
                 <rect width="22" height="22" fill="#1d2b78"/><line x1="0" y1="11" x2="22" y2="11" stroke="#2c3d93" stroke-width="6"/>
@@ -418,6 +420,7 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
               <path d="M612 262 L646 173" stroke-width="26" fill="none"/>
               <path d="M972 300 L962 345" stroke-width="26" fill="none"/>
               <path d="M100 668 L108 712" stroke-width="26" fill="none"/>
+              <rect x="817" y="254" width="56" height="30" rx="6" transform="rotate(-12 845 269)" stroke="none"/>
             </g>
             <g stroke="#000" stroke-width="4">
               <g transform="translate(950 84)"><circle r="34" fill="#ffc61a"/><text class="m-p" y="11" text-anchor="middle" stroke="none">P1</text></g>
@@ -425,6 +428,13 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
               <g transform="translate(565 212)"><circle r="34" fill="#ffc61a"/><text class="m-p" y="11" text-anchor="middle" stroke="none">P3</text></g>
               <g transform="translate(912 340)"><circle r="34" fill="#ffc61a"/><text class="m-p" y="11" text-anchor="middle" stroke="none">P4</text></g>
               <g transform="translate(58 742)"><circle r="34" fill="#ffc61a"/><text class="m-p" y="11" text-anchor="middle" stroke="none">P5</text></g>
+            </g>
+            <!-- P6 : 2 places PMR -->
+            <g transform="translate(752 236)">
+              <rect x="-62" y="-34" width="124" height="68" rx="34" fill="#ffc61a" stroke="#000" stroke-width="4"/>
+              <text class="m-p" x="-24" y="11" text-anchor="middle">P6</text>
+              <rect x="6" y="-19" width="38" height="38" rx="7" fill="#1f5fbf" stroke="#000" stroke-width="3"/>
+              <g transform="translate(10 -15) scale(1.25)"><circle cx="12" cy="4" r="2" fill="#fff"/><path fill="#fff" d="M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-6.17 5c-.41 1.16-1.52 2-2.83 2-1.66 0-3-1.34-3-3 0-1.31.84-2.41 2-2.83V12.1c-2.28.46-4 2.48-4 4.9 0 2.76 2.24 5 5 5 2.42 0 4.44-1.72 4.9-4h-2.07z"/></g>
             </g>
 
             <!-- Église et mairie -->
@@ -454,9 +464,10 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
             <ol class="parkings">
               <li><span class="p-badge">P1</span><span><strong>Près de l’église</strong>, juste à côté de la mairie. Le plus proche de la salle.</span></li>
               <li><span class="p-badge">P2</span><span><strong>Le long de la D67</strong>, juste à côté de l’église (environ 3&nbsp;places).</span></li>
-              <li><span class="p-badge">P3</span><span><strong>Rue Les Granges</strong>, devant l'école primaire, entre la D67 et La Chapelle, à quelques pas.</span></li>
+              <li><span class="p-badge">P3</span><span><strong>Rue Les Granges</strong>, devant l'école primaire, entre la D67 et la D503, à quelques pas.</span></li>
               <li><span class="p-badge">P4</span><span><strong>Entrée de la rue de Montagnon</strong>, juste de l’autre côté de la D503.</span></li>
               <li><span class="p-badge">P5</span><span><strong>Sortie de la rue de Montagnon</strong>, à l’entrée du village côté Maclas, environ 5&nbsp;min à pied.</span></li>
+              <li><span class="p-badge">P6</span><span><strong>Devant la salle</strong>, côté D503&nbsp;: <span class="pmr"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-6.17 5c-.41 1.16-1.52 2-2.83 2-1.66 0-3-1.34-3-3 0-1.31.84-2.41 2-2.83V12.1c-2.28.46-4 2.48-4 4.9 0 2.76 2.24 5 5 5 2.42 0 4.44-1.72 4.9-4h-2.07z"/></svg>2 places réservées aux personnes à mobilité réduite (PMR)</span>.</span></li>
             </ol>
           </div>
           <div>
