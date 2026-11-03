@@ -87,6 +87,8 @@ h1,h2,h3{font-family:var(--f-main);font-weight:400;line-height:1.05;margin:0;let
 .btn:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--jaune-fonce)}
 .btn.ghost{background:transparent;color:var(--jaune);box-shadow:inset 0 0 0 2px var(--jaune)}
 .btn.ghost:hover{transform:none;background:#ffc61a1a}
+.btn.dark{background:var(--noir);color:var(--jaune);margin-top:.8rem;box-shadow:0 5px 0 #0006}
+.btn.dark:hover{box-shadow:0 3px 0 #0006}
 
 /* ---------- Sections ---------- */
 section{padding:clamp(2.5rem,6vw,4.5rem) 0}
@@ -129,10 +131,8 @@ p{margin:0 0 1em;max-width:68ch}
 .info li{margin-bottom:.35rem}
 .menu{display:flex;flex-wrap:wrap;gap:.45rem;margin:.2rem 0 1rem;padding:0!important;list-style:none}
 .info .menu{margin:.2rem 0 1.1rem}
-.especes svg{flex-shrink:0}
 .menu li{font-family:var(--f-serif);background:var(--lavande);color:var(--noir);padding:.15rem .75rem;border-radius:999px;margin:0}
-.especes{display:flex;gap:.6rem;align-items:center;background:var(--jaune);color:var(--noir);font-weight:600;padding:.5rem .8rem;border-radius:10px}
-.buvette-pics{display:flex;gap:.6rem;align-items:end;margin-bottom:.8rem}
+.buvette-pics{display:flex;gap:.6rem;align-items:end;justify-content:center;margin-bottom:.8rem}
 .buvette-pics img:first-child{width:92px}.buvette-pics img:last-child{width:76px}
 
 /* Plan d'accès */
@@ -166,7 +166,7 @@ p{margin:0 0 1em;max-width:68ch}
 .orga{display:grid;grid-template-columns:minmax(0,170px) 1fr;gap:clamp(1.2rem,4vw,2.4rem);align-items:start}
 .orga h3{font-size:clamp(1.8rem,4vw,2.4rem);color:var(--jaune);margin-bottom:.7rem}
 .orga h4{font-family:var(--f-serif);font-weight:400;font-size:1.2rem;color:var(--lavande);margin:1.2rem 0 .3rem}
-.orga .porte-logo{background:var(--jaune);border-radius:50%;aspect-ratio:1;display:grid;place-items:center;padding:1.2rem}
+.orga .porte-logo{background:#e8ebf5;border-radius:50%;aspect-ratio:1;display:grid;place-items:center;padding:1.2rem}
 .socials{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1rem}
 
 /* FAQ */
@@ -242,7 +242,7 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
           <p>Une quinzaine de jeux de société à découvrir, pour les petits comme pour les grands. Nos bénévoles vous expliquent les règles.</p></div></li>
         <li><time datetime="2026-12-05T16:00">16h00</time>
           <div><h3>Initiations au jeu de rôles</h3>
-          <p>Avec La Porte des Mondes, tout au long de l’après-midi. Sur inscription.</p></div></li>
+          <p>Avec La Porte des Mondes, tout au long de l’après-midi. <a target="_blank" rel="noopener" href="https://www.helloasso.com/associations/la-meute-ludique/evenements/inscription-soiree-jdr-la-porte-des-mondes">Sur inscription</a>.</p></div></li>
         <li><time datetime="2026-12-05T20:00">20h00</time>
           <div><h3>Grande partie de Loups-garous</h3>
           <p>Inscription sur place, à partir de 10&nbsp;ans.</p></div></li>
@@ -265,7 +265,7 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
           </svg>
           <div>
             <h3>Jeux de société</h3>
-            <p>Une quinzaine de jeux pour tous les âges et tous les niveaux. Vous pouvez aussi venir avec vos propres jeux, ils restent sous votre responsabilité.</p>
+            <p>Une quinzaine de jeux pour tous les âges et tous les niveaux, en présence de nos bénévoles. Vous pouvez aussi venir avec vos propres jeux, ils restent sous votre responsabilité.</p>
             <span class="tag">Accès libre</span>
           </div>
         </article>
@@ -275,7 +275,7 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
           <div>
             <h3>Initiations au jeu de rôles</h3>
             <p>Lancez-vous dans votre première aventure avec le maître du jeu de La Porte des Mondes. Aucune expérience nécessaire&nbsp;: il suffit d’un peu d’imagination.</p>
-            <span class="tag">Sur inscription</span>
+            <a class="btn dark" target="_blank" rel="noopener" href="https://www.helloasso.com/associations/la-meute-ludique/evenements/inscription-soiree-jdr-la-porte-des-mondes">S’inscrire</a>
           </div>
         </article>
 
@@ -313,10 +313,6 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
           <ul class="menu">
             <li>Hot-dogs</li><li>Frites</li><li>Crêpes</li><li>Boissons sans alcool</li><li>Bières</li><li>Café</li>
           </ul>
-          <div class="especes">
-            <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2" fill="none" stroke="#000" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="none" stroke="#000" stroke-width="2"/></svg>
-            Paiement en espèces uniquement, pas de carte bancaire.
-          </div>
         </div>
 
         <div class="info">
@@ -325,7 +321,7 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
             <li>L’entrée est gratuite, sans réservation.</li>
             <li>Les enfants doivent rester sous la responsabilité d’un adulte.</li>
             <li>Le Loups-garous est ouvert à partir de 10&nbsp;ans.</li>
-            <li>Les initiations au jeu de rôles se font sur inscription.</li>
+            <li>Les initiations au jeu de rôles se font sur <a target="_blank" rel="noopener" href="https://www.helloasso.com/associations/la-meute-ludique/evenements/inscription-soiree-jdr-la-porte-des-mondes">inscription</a>.</li>
             <li>Les jeux apportés par les participants restent sous leur responsabilité.</li>
           </ul>
         </div>
@@ -509,6 +505,9 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
           <div>
             <h3>La Porte des Mondes</h3>
             <p>Nos partenaires de La Porte des Mondes animent les initiations au jeu de rôles de l’après-midi. Leurs maîtres du jeu guident les débutants pas à pas dans des aventures courtes et accessibles.</p>
+            <div class="socials">
+              <a class="btn" href="https://www.helloasso.com/associations/la-meute-ludique/evenements/inscription-soiree-jdr-la-porte-des-mondes" target="_blank" rel="noopener">S’inscrire à l’initiation</a>
+            </div>
           </div>
         </article>
       </div>
@@ -522,15 +521,13 @@ footer p{margin:.3rem auto;max-width:none;font-size:.95rem}
         <details><summary>Faut-il savoir jouer pour venir&nbsp;?</summary>
           <p>Pas du tout. Nos bénévoles expliquent les règles de chaque jeu et vous aident à choisir selon vos envies et votre âge.</p></details>
         <details><summary>Faut-il réserver&nbsp;?</summary>
-          <p>Non, l’entrée est libre et gratuite. Seules les initiations au jeu de rôles se font sur inscription.</p></details>
+          <p>Non, l’entrée est libre et gratuite. Seules les initiations au jeu de rôles se font sur <a target="_blank" rel="noopener" href="https://www.helloasso.com/associations/la-meute-ludique/evenements/inscription-soiree-jdr-la-porte-des-mondes">inscription</a>.</p></details>
         <details><summary>Comment s’inscrire aux initiations au jeu de rôles&nbsp;?</summary>
-          <p>Contactez La Meute Ludique sur <a href="https://www.facebook.com/people/La-meute-ludique/61586945752741/">sa page Facebook</a>. Les places sont limitées.</p></details>
+          <p>Vous pouvez vous inscrire ici : <a target="_blank" rel="noopener" href="https://www.helloasso.com/associations/la-meute-ludique/evenements/inscription-soiree-jdr-la-porte-des-mondes">inscriptions</a>. Les places sont limitées.</p></details>
         <details><summary>Peut-on venir avec ses propres jeux&nbsp;?</summary>
           <p>Oui, avec plaisir&nbsp;! Ils restent sous votre responsabilité pendant toute la durée de l’évènement.</p></details>
         <details><summary>Mon enfant peut-il participer au Loups-garous&nbsp;?</summary>
           <p>Oui, à partir de 10&nbsp;ans. Comme pour toute la journée, les enfants restent sous la responsabilité d’un adulte.</p></details>
-        <details><summary>Peut-on payer par carte à la buvette&nbsp;?</summary>
-          <p>Non, la buvette accepte uniquement les espèces.</p></details>
       </div>
     </div>
   </section>
